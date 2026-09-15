@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-cad: #0f1117;
+    --panel-cad: #1a1d27;
+    --border-cad: #2a2e3d;
+    --text-cad: #e1e4ea;
+    --text-muted: #8b92a5;
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif;
+    background-color: #0b0d13;
+    color: #e2e8f0;
+    -webkit-font-smoothing: antialiased;
+  }
+}
+
+/* Monospace CAD font styles */
+.font-mono-cad {
+  font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
+}
+
+/* Custom scrollbars for code preview and table */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #11141c;
+}
+::-webkit-scrollbar-thumb {
+  background: #2b3042;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #3e455c;
+}
